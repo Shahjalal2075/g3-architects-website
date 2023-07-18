@@ -3,6 +3,7 @@
     overflow-x: hidden;
 }
 
+
 .btn-primary{
     color: #FFF;
     text-align: center;
@@ -21,6 +22,16 @@
 .color-2{
     color: #FF900E;
     font-weight: 700;
+}
+.sec-title{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.sec-des{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 /* header style */
@@ -80,7 +91,7 @@ nav a{
 }
 /* main section*/
 main{
-    max-width: 1366px;
+    max-width: 1040px;
     margin: 0 auto;
 }
 
@@ -88,7 +99,7 @@ main{
 .team-container{
     display: flex;
     align-items: center;
-    margin: 50px 150px;
+    margin: 50px 0;
 }
 .team-img{
     display: grid;
@@ -110,11 +121,50 @@ main{
     font-weight: 500;
 }
 .team-des{
-    color: #727272;
-    font-size: 1rem;
-    font-weight: 400;
     margin-top: 20px;
     margin-bottom: 30px;
+}
+
+/* facts */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+.facts-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 20px 0;
+    width: 200px;
+}
+.facts-card-container .card .card-stats{
+    color: #424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.facts-card-container .card .card-title{
+    color: #727272;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* sponsor*/
+.sponsor{
+    text-align: center;
+}
+.sponsor-img-container{
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 7.5rem;
+    align-items: center;
 }
 
 
@@ -126,7 +176,7 @@ main{
     .team-container{
         margin: 20px;
     }
-    nav, .team-container{
+    nav, .team-container, .facts-card-container, .sponsor-img-container{
         flex-direction: column;
     }
     .team-img{
@@ -135,6 +185,13 @@ main{
     .team-img,.team-content{
         width: 100%;
     }
+    .facts-card-container{
+        margin-top: 20px;
+        gap: 20px;
+    }
+    .facts-card-container .card{
+        width: 100%;
+    }=
 }
 
 /* responsive 960px */
@@ -150,6 +207,18 @@ main{
     }
     .team-img,.team-content{
         width: 100%;
+    }
+    .facts-card-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 20px;
+    }
+    .facts-card-container .card{
+        width: 100%;
+    }
+    .sponsor-img-container{
+        gap: 50px;
     }
 }
 
